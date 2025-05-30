@@ -13,4 +13,4 @@ COPY proxy_server.py .
 # Expose port 3130
 EXPOSE 3130
 
-CMD ["python", "proxy_server.py"]
+CMD ["python", "main.py"]
