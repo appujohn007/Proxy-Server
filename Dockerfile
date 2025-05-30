@@ -10,7 +10,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy proxy server code
 COPY main.py .
 
-# Expose port 3130
-EXPOSE 8000
+# Expose port 
+EXPOSE 8080
 
 CMD ["python", "main.py"]
