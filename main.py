@@ -32,7 +32,7 @@ class ProxyHTTPRequestHandler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(r.content)
 
-def run(server_class=HTTPServer, handler_class=ProxyHTTPRequestHandler, port=3130):
+def run(server_class=HTTPServer, handler_class=ProxyHTTPRequestHandler, port=8000):
     server_address = ('', port)
     httpd = server_class(server_address, handler_class)
     print(f'Starting proxy on port {port}...')
